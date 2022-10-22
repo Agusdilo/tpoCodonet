@@ -1,3 +1,6 @@
+
+/*Sección Slider*/
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,3 +27,33 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+/*Sección Tarjetas*/
+
+const { createApp } = Vue 
+
+     createApp({
+        data() {
+            return {
+
+              url:'Js/planes.json',
+              planes:[]
+            }
+        },
+        methods: {
+          fetchData(url) {
+            
+              fetch(url)
+                  .then(response => response.json())
+                  .then(data => {
+                      this.planes=data
+                      console.log(this.planes)
+                  })
+          }
+        },
+        created(){
+
+          this.fetchData(this.url)
+        }
+     }).mount('#app')

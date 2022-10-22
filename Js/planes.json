@@ -1,0 +1,51 @@
+{
+    "arreglo":[
+        {
+            "id":1,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"HOGAR",
+            "descripcion":"24hs. Online. Hasta 40mbps"            
+        },
+
+        {
+            "id":2,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"HOGAR PLUS",
+            "descripcion":"24hs. Online. Hasta 50mbps"            
+        },
+
+        {
+            "id":3,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"EMPRESA",
+            "descripcion":"24hs. Online. Hasta 70mbps"            
+        },
+
+        {
+            "id":4,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"EMPRESA PLUS",
+            "descripcion":"24hs. Online. Hasta 85mbps"            
+        },
+
+        {
+            "id":5,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"PREMIUM",
+            "descripcion":"24hs. Online. Hasta 100mbps"            
+        },
+
+        {
+            "id":6,
+            "iconoConexion":"Imagenes/iconoFibra.png",
+            "iconoTipo":"",
+            "nombre":"SOCIO",
+            "descripcion":"24hs. Online. Hasta 20mbps"            
+        }
+    ]
+}
