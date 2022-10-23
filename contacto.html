@@ -17,87 +17,103 @@
 
 <body>
 
-<header>
+    <header>
 
     
 
-    <nav>
-        
-        <div class="navContainer">
-
-            <div class="logoNav">
-        
-                <a href="index.html">
-                    <img src="Imagenes/logo_blanco_codo.png" alt="codonet" title="codonet">
-                </a>
-
-            </div>
-        
-            <div class="menuNav">
-               
-                <ul>
-
-                    <li> <a href="planes.html">PLANES</a> </li>
-                    <li> <a href="zona.html">ZONA DE COBERTURA</a> </li>
-                    <li> <a href="nosotros.html">NOSOTROS</a> </li>
-                    <li> <a href="contacto.html">CONTACTO</a> </li>
-
-                </ul>
-
-
-            </div>
-
+        <nav>
             
-        </div>
-
-
-    </nav>
-
+            <div class="navContainer">
+    
+                <div class="logoNav">
+            
+                    <a href="index.html">
+                        <img src="Imagenes/logo_blanco_codo.png" alt="codonet" title="codonet">
+                    </a>
+    
+                </div>
+                
+                
+                <input type="checkbox" id="menu-check">
+                <label id="menu" for="menu-check">
+                    <span id="menu-abrir">&#9776;</span>
+                </label>
+    
+    
+                <div class="menuNav">
+                   
+                    <ul>
+    
+                        <li> <a href="planes.html">PLANES</a> </li>
+                        <li> <a href="zona.html">ZONA DE COBERTURA</a> </li>
+                        <li> <a href="nosotros.html">NOSOTROS</a> </li>
+                        <li> <a href="contacto.html">CONTACTO</a> </li>
+    
+                    </ul>
+    
+    
+                </div>
+    
+                
+            </div>
+    
+    
+        </nav>
+    
+        
+    
+    
+    </header>
     
 
-
-</header>
-    
-
-<br><br><br><br><br><br><br>
+<br><br><br><br>
 
 <h2 class="tituloContacto">CONTACTO</h2>
+<br><br>
+<form id="form" class="registro" action="https://formspree.io/f/xaykdgbe" method="POST">
 
-<form class="registro" action="">
-
+    <div class="izquierdaForm">
+        <label for="Nombre">Nombre y apellido</label>
+        <br>
+        <input name="nombre" id="nombre" type="text" class="campo">
+        <br>
+        <label for="Celular">Celular</label>
+        <br>
+        <input name="tel" id="tel" type="tel" class="campo">
+        <br>
+        <label for="Mail">E-mail</label>
+        <br>
+        <input name="email" id="email" type="text" class="campo">
+    </div>
+    <br>
+    <div class="derechaForm">
+        <label for="Consulta">Motivo de consulta</label>
+        <br>
+        <select name="consulta" id="consulta" class="campo">
+            <option>Venta</option>
+            <option>Administración</option>
+            <option>Instalación</option>
+            <option>Otro</option>
+        </select>
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="campo"></textarea>
+        <br>
+        <div class="botonesForm">
+            <input type="reset" value="Limpiar" class="botonSubmit">
+            <input type="submit" value="Enviar" class="botonSubmit">
+        </div>
+        <p class="advertencia" id="advertencia"></p>
+    </div>
     
-    <label for="Nombre">Nombre y apellido</label>
-    <br>
-    <input type="text" required>
-    <br>
-    <label for="Celular">Celular</label>
-    <br>
-    <input type="tel" required>
-    <br>
-    <label for="Mail">E-mail</label>
-    <br>
-    <input type="email" required>
-    <br>
-    <label for="Consulta">Motivo de consulta</label>
-    <br>
-    <select name="consulta" id="consulta">
-        <option>Venta</option>
-        <option>Administración</option>
-        <option>Instalación</option>
-        <option>Otro</option>
-    </select>
-    <br>
-    <input type="reset" value="Borrar campos">
-    <input type="submit" value="Enviar información">
-    
-
 </form>
 
 
 
 <br><br><br>
 
-<a href="api.whatsapp.com/send?phone=2223426595" class="btnWsp" target="_blank">
+<a href="https://wa.me/2223426595" class="btnWsp" target="_blank">
 
     <i class="iconoWsp"><img src="Imagenes/whatsappColor.png" alt="wsp"></i>
 
@@ -135,7 +151,8 @@
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="Js/main.js"></script>    
+    <script src="Js/main.js"></script>
+    <script src="Js/validacionForm.js"></script>
 
 </body>
 

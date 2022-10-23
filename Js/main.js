@@ -1,59 +1,47 @@
+let url = "js/planes.json"
+let arreglo = [];
+    fetch(url)
 
-/*Sección Slider*/
+      .then(response => response.json())
+      .then(data => { 
+          console.log(data)
+          arreglo = data.arreglo
+          console.log(arreglo) 
+     
+     
+          let cad = `<div class="Flexcontainer">`
+     
+          for (plan of arreglo) {
+              cad += `
+          <div class="tarjeta">
+              <div class="iconosTarjetas">
+                <img class="icono" src="${plan.iconoConexion}" alt="${plan.tipo}">
+                <img src="${plan.iconoTipo}">
+              </div>
+              <div class="cuerpo">
 
-let slideIndex = 1;
-showSlides(slideIndex);
+                  <h4>${plan.nombre}</h4>
+                  <p>${plan.descripcion}</p>
+                  
+              </div>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-/*Sección Tarjetas*/
-
-const { createApp } = Vue 
-
-     createApp({
-        data() {
-            return {
-
-              url:'Js/planes.json',
-              planes:[]
-            }
-        },
-        methods: {
-          fetchData(url) {
-            
-              fetch(url)
-                  .then(response => response.json())
-                  .then(data => {
-                      this.planes=data
-                      console.log(this.planes)
-                  })
+              <div class="tarjetaBoton">
+                    <a href="contacto.html"><button>SOLICITAR</button></a>
+              </div>
+          </div>   
+      `
           }
-        },
-        created(){
-
-          this.fetchData(this.url)
-        }
-     }).mount('#app')
+     
+     
+          cad += `</div>
+          `
+     
+          console.log(cad)
+     
+     
+     
+          document.getElementById("tarjetas").innerHTML = cad;
+     
+     
+      });
+   

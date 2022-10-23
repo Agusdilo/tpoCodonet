@@ -3,49 +3,109 @@
         {
             "id":1,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/hogar.png",
             "nombre":"HOGAR",
-            "descripcion":"24hs. Online. Hasta 40mbps"            
+            "descripcion":"24hs. Online. Hasta 40mbps",
+            "tipo":"fibra"            
         },
 
         {
             "id":2,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/hogar.png",
             "nombre":"HOGAR PLUS",
-            "descripcion":"24hs. Online. Hasta 50mbps"            
+            "descripcion":"24hs. Online. Hasta 50mbps",
+            "tipo":"fibra"            
         },
 
         {
             "id":3,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/fabrica.png",
             "nombre":"EMPRESA",
-            "descripcion":"24hs. Online. Hasta 70mbps"            
+            "descripcion":"24hs. Online. Hasta 70mbps",
+            "tipo":"fibra"            
         },
 
         {
             "id":4,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/fabrica.png",
             "nombre":"EMPRESA PLUS",
-            "descripcion":"24hs. Online. Hasta 85mbps"            
+            "descripcion":"24hs. Online. Hasta 85mbps",
+            "tipo":"fibra"            
         },
 
         {
             "id":5,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/calidad-premium.png",
             "nombre":"PREMIUM",
-            "descripcion":"24hs. Online. Hasta 100mbps"            
+            "descripcion":"24hs. Online. Hasta 100mbps",
+            "tipo":"fibra"            
         },
 
         {
             "id":6,
             "iconoConexion":"Imagenes/iconoFibra.png",
-            "iconoTipo":"",
+            "iconoTipo":"Imagenes/apreton-de-manos.png",
             "nombre":"SOCIO",
-            "descripcion":"24hs. Online. Hasta 20mbps"            
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"fibra"            
+        },
+
+        {
+            "id":7,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/hogar.png",
+            "nombre":"HOGAR",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
+        },
+
+        {
+            "id":8,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/hogar.png",
+            "nombre":"HOGAR PLUS",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
+        },
+
+        {
+            "id":9,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/fabrica.png",
+            "nombre":"EMPRESA",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
+        },
+
+        {
+            "id":10,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/fabrica.png",
+            "nombre":"EMPRESA PLUS",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
+        },
+
+        {
+            "id":11,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/calidad-premium.png",
+            "nombre":"PREMIUM",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
+        },
+
+        {
+            "id":12,
+            "iconoConexion":"Imagenes/iconoInalambrico.png",
+            "iconoTipo":"Imagenes/casa-de-campo.png",
+            "nombre":"RURAL",
+            "descripcion":"24hs. Online. Hasta 20mbps",
+            "tipo":"Inalambrico"            
         }
     ]
 }

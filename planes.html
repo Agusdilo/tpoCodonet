@@ -17,53 +17,60 @@
 
 <body>
 
-<header>
+    <header>
 
     
 
-    <nav>
-        
-        <div class="navContainer">
-
-            <div class="logoNav">
-        
-                <a href="index.html">
-                    <img src="Imagenes/logo_blanco_codo.png" alt="codonet" title="codonet">
-                </a>
-
-            </div>
-        
-            <div class="menuNav">
-               
-                <ul>
-
-                    <li> <a href="planes.html">PLANES</a> </li>
-                    <li> <a href="zona.html">ZONA DE COBERTURA</a> </li>
-                    <li> <a href="nosotros.html">NOSOTROS</a> </li>
-                    <li> <a href="contacto.html">CONTACTO</a> </li>
-
-                </ul>
-
-
-            </div>
-
+        <nav>
             
-        </div>
-
-
-    </nav>
-
+            <div class="navContainer">
+    
+                <div class="logoNav">
+            
+                    <a href="index.html">
+                        <img src="Imagenes/logo_blanco_codo.png" alt="codonet" title="codonet">
+                    </a>
+    
+                </div>
+                
+                
+                <input type="checkbox" id="menu-check">
+                <label id="menu" for="menu-check">
+                    <span id="menu-abrir">&#9776;</span>
+                </label>
+    
+    
+                <div class="menuNav">
+                   
+                    <ul>
+    
+                        <li> <a href="planes.html">PLANES</a> </li>
+                        <li> <a href="zona.html">ZONA DE COBERTURA</a> </li>
+                        <li> <a href="nosotros.html">NOSOTROS</a> </li>
+                        <li> <a href="contacto.html">CONTACTO</a> </li>
+    
+                    </ul>
+    
+    
+                </div>
+    
+                
+            </div>
+    
+    
+        </nav>
+    
+        
+    
+    
+    </header>
     
 
-
-</header>
-    
-
-<br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 <div class="btnContainer">
 
-    <div class="btnFibra">
+    <div class="btnFibra" id="btnFibra">
 
         <img src="Imagenes/iconoFibra.png" alt="iconFibra" >
 
@@ -72,7 +79,7 @@
     </div>
 
 
-    <div class="btnInalambrico">
+    <div class="btnInalambrico" id="btnInalambrico" itemid="btnInalambrico">
 
         <img src="Imagenes/iconoInalambrico.png" alt="iconInalambrico">
 
@@ -86,69 +93,11 @@
 
 <br><br><br><br>
 
-<div id="app">
+<div id="tarjetas"> <!--Div contenedor de tarjetas trabajado en main.js-->
 
-    {{planes}}
-
-</div>
-
-<div class="flexContainer">
-
-    <div class="tarjeta">
-        
-        <h2>Fibra óptica</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 40mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h2>Inalámbrico</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 30mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h2>Fibra óptica</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 40mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h2>Fibra óptica</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 40mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h2>Fibra óptica</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 40mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h2>Fibra óptica</h2>
-        <p>24hs. Online</p>
-        <p>Hasta 40mbps</p>
-        <a class="tarjetaBoton" href="#">SOLICITAR</a>
-
-    </div>
 
 </div>
+
 
 
 <br><br><br><br><br>
@@ -179,7 +128,7 @@
 <br><br><br>
 
 
-<a href="api.whatsapp.com/send?phone=2223426595" class="btnWsp" target="_blank">
+<a href="https://wa.me/2223426595" class="btnWsp" target="_blank">
 
     <i class="iconoWsp"><img src="Imagenes/whatsappColor.png" alt="wsp"></i>
 
@@ -218,7 +167,7 @@
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="Js/main.js"></script>    
+    <script src="Js/main.js"></script> 
 
 </body>
 
